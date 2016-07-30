@@ -13,5 +13,6 @@ else
 	sudo mount -t auto -o uid=1000,gid=1000 /dev/sda1/ /media/usb1
 	echo "backing home folder to /media/usb1/shared/Home_folder_Daily_Backup"
 	rsync -a  /home/pi/ /media/usb1/shared/Home_folder_Daily_Backup
+	echo "testing branches on git"
 fi
 
