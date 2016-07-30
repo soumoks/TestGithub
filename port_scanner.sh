@@ -6,5 +6,4 @@ read port
 echo "================="
 echo ""
 echo "testing git commit"
-echo "testing multiple commits"
 nmap -p $port $address | grep -i -A 1 state
