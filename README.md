@@ -1,2 +1,2 @@
 # TestGithub
-Testing github
+Mostly a collection of small scripts.
