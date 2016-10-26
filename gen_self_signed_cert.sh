@@ -32,7 +32,7 @@ echo "                                          "
 echo "Enter the name of the CSR, uses name 'server' by default"
 read CSR
 
-if [ -z $CSR]
+if [ -z $CSR ]
 then
         echo "using default name 'server'"
         CSR=server
