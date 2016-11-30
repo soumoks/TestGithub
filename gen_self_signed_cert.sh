@@ -83,7 +83,7 @@ echo "                                          "
 echo "=========================================="
 echo "                                          "
 
-#remove unused files
+#remove extra files
 rm $private_key.key.org
 
 #display generated files
