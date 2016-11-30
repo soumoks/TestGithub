@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#####Script created by Sourabh Mokhasi#######
+#####Based on this document "http://www.akadia.com/services/ssh_test_certificate.html"##########
+
 #####Store the current directory path########
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -51,7 +54,7 @@ echo "                                          "
 #####STEP 3#####
 #####Remove passphrase from key#####
 cp $private_key.key $private_key.key.org
-echo "Enter the passphrase in order to remove the passphrase"
+echo "Enter the passphrase in order to remove the passphrase from the private key"
 openssl rsa -in $private_key.key.org -out $private_key.key
 
 #beautify
@@ -80,6 +83,10 @@ echo "                                          "
 echo "=========================================="
 echo "                                          "
 
+#remove unused files
+rm $private_key.key.org
+
+#display generated files
 echo "Generated files are $private_key.key,$CSR.csr and $cert.crt"
 #beautify
 echo "                                          "
